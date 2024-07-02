@@ -9,3 +9,8 @@
   background-color: #1F27F5;
   cursor: pointer;
 }
+
+.button-img {
+  width: 20px;
+  height: 20px;
+}
