@@ -30,47 +30,17 @@ function Lesson05() {
     );
   });
 
+  const menuButtons = buttonNames.map((value) => {
+    return (
+      <div key={v4()} className="button-control">
+        <Button name={value} onClick={() => addProduct(value)} />
+      </div>
+    );
+  });
   return (
     <div className="page-wrapper">
       <h1>Menu</h1>
-      <div className="button-container">
-        <div className="button-control">
-          <Button
-            name={buttonNames[0]}
-            onClick={() => addProduct(buttonNames[0])}
-          />
-        </div>
-        <div className="button-control">
-          <Button
-            name={buttonNames[1]}
-            onClick={() => addProduct(buttonNames[1])}
-          />
-        </div>
-        <div className="button-control">
-          <Button
-            name={buttonNames[2]}
-            onClick={() => addProduct(buttonNames[2])}
-          />
-        </div>
-        <div className="button-control">
-          <Button
-            name={buttonNames[3]}
-            onClick={() => addProduct(buttonNames[3])}
-          />
-        </div>
-        <div className="button-control">
-          <Button
-            name={buttonNames[4]}
-            onClick={() => addProduct(buttonNames[4])}
-          />
-        </div>
-        <div className="button-control">
-          <Button
-            name={buttonNames[5]}
-            onClick={() => addProduct(buttonNames[5])}
-          />
-        </div>
-      </div>
+      <div className="button-container">{menuButtons}</div>
       <div className="order-list-container">
         <h1>Order list:</h1>
         <ul>{orderList}</ul>
