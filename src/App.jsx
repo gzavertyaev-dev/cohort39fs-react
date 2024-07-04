@@ -13,14 +13,16 @@ import Homework04 from "./homeworks/Homework04/Homework04";
 
 //Consultations
 import Consultation01 from "./consultations/Consultation01/Consultation01";
+import Consultation_02 from "./consultations/Consultation_02/Consultation_02";
 
 function App() {
   return (
     <div className="App">
       {/* <Consultation01 /> */}
+      <Consultation_02 />
       {/* <Homework02 /> */}
       {/* <Homework03 /> */}
-      <Lesson05 />
+      {/* <Lesson05 /> */}
       {/* <Lesson02 /> */}
       {/* <Lesson03 /> */}
       {/* <Lesson04 /> */}
